@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+
+   		</div>
+   	</div> <!-- /section-intro-->
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{% static 'app/images/portfolio/wb.jpg'%}" alt="Web solutions">
+	                  <a href="#modal-01" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Web solutions</h3>
+		     					    	 <span class="folio-types">
+		     					       	  Creative ideas
+		     					       </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/ux.jpg" alt="User Experience">
+	               	<a href="#modal-02" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">UX solutions</h3>
+		     					    	<span class="folio-types">
+		     					       	  User experience
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/sof.jpg"alt="Software solutions">
+	                  <a href="#modal-03" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Software solutions</h3>
+		     					    	<span class="folio-types">
+		     					       	  Future solutions !
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/dev.jpg" alt="Development">
+	                  <a href="#modal-04" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Creation & development</h3>
+		     					    	<span class="folio-types">
+		     					       	  Project Development
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-wb.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Web solutions</h4>
+                <h6>Simple is beautiful.</h6>
+					      <p>Cramming too much into each page creates confusion. Visitors get frustrated when they have to scan through rows of links and images to find what they are looking for. By keeping your pages simple, your website will be easier to use.</p>
+
+					      <div class="categories">Web Development</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://sharpened.com/web_design_rules">More Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-ux.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>User experience solutions</h4>
+					      <p>Visibility of system status. Match between system and the real world. User control and freedom. Error prevention. Flexibility and efficiency of use. Help users recognize, diagnose and recover from errors. Help and documentation.</p>
+
+					      <div class="categories">UX</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="http://via.placeholder.com/1050x700" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>#</h4>
+					      <p>#####.</p>
+
+					      <div class="categories">#</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-dev.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Project Development</h4>
+					      <p>The primary challenge of project management is to achieve all of the project goals within the given constraints. This information is usually described in project documentation, created at the beginning of the development process. The primary constraints are scope, time, quality and budget.</p>
+
+					      <div class="categories">Project Development</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://en.wikipedia.org/wiki/Project_management">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-04 -->
+
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper -->
+
+   		</div>  <!-- /twelve -->
+
+   	</div> <!-- /portfolio-content -->
+
+	</section> <!-- /portfolio -->
+
+
+
+{% endblock %}

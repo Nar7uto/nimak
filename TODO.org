@@ -1,0 +1,14 @@
+* Home
+** TODO Add Posts Button
+** TODO Add Profile text
+** TODO Add Intro text
+
+* Menu
+** DONE Add urls
+
+* Post
+** DONE Make post model database
+** DONE Detail View and template
+*** TODO Design Template
+** DONE List View and template
+*** TODO Design card
