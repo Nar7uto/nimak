@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="intro-overlay"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+   			  <h1>Nima Karimi</h1>
+
+   			  <p class="intro-position"> <span>computer software engineer</span></p>
+                <ul class="intro-social">
+        <li><a href="https://facebook.com/K4rimi"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/nim4/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/nim4karimi/"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/nim4karimi/"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://linkedin.com/nim4karimi/"><i class="fa fa-linkedin"></i></a></li>
+    </ul> <!-- /intro-social -->
+   			  <a id="ssss" class="button smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>
+
+   		</div>
+   	</div> <!-- /intro-content -->
+
+
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="{% static 'app/images/Avatar.jpg' %}" alt="Nima Karimi">
+
+   				<p class="lead">As a Software front-end engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+   			</div>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>I’m always looking for opportunities to work with talented people. If you have a project you’d like to collaborate on, have an amazing job offer or just want to say “hi” – I’d love to hear from you. If you're in the iran - urmia area, let's get a coffee.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Nima Karimi</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>93 March 28</span>
+   				</li>
+                <li>
+                    <strong>Nationality:</strong>
+                    <span>Iran</span>
+                </li>
+                <li>
+                    <strong>Relocation :</strong>
+                    <span>Yes</span>
+                </li>
+   				<li>
+   					<strong>Ongoing:</strong>
+   					<span>Freelancer, Co founder at <a href="https://herotek.ir">herotek ®</a></span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>nima.karimi@live.com</span>
+   				</li>
+                <li>
+                    <strong>Phone :</strong>
+                    <span>+989141436088</span>
+
+                </li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Technologys</h3>
+   			<p>eye-catching, and engaging responsive design created with python frameworks PyQt5 , KIVY , HTML5 & CSS3, JavaScript & JQuery.I am familiar with backend technologies such as Ruby, Python, Django , Flask , SQL, and Bootstrap framework.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Python3 <small>-Programming </small></strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Front end development</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>CMS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>80%</span></div>
+				   	<strong>Industrial & Graphic design</strong>
+				   </li>
+				</ul> <!-- /skill-bars -->
+
+   		</div>
+
+   	</div>
+
+{#   	<div class="row button-section">#}
+{#   		<div class="col-twelve">#}
+{#   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>#}
+{#   			<a href="#contact" title="Say Hello !" class="button stroke smoothscroll">Say Hello !</a>#}
+{#   		</div>#}
+{#   	</div>#}
+
+   </section> <!-- /process-->
+
+{% endblock %}

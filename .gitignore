@@ -1,0 +1,11 @@
+db.sqlite3
+*.sqlite3
+app/__pychache__
+app/__pychache__/
+nimak/__pychache__
+nimak/__pychache__/
+*.pyc
+__pycach__
+*.egg-info
+*.pot
+*.py[co]
