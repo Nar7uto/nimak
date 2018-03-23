@@ -1,4 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    {{ object.title }}
+    <section id="posts">
+        <div class="row">
+
+            <h1> {{ object.title }} </h1>
+            <p>{{ object.pub }}</p>
+            {{ object.pic }}
+            <p>{{ object.body }}</p>
+            {{ object.tag }}
+        </div>
+
+    </section>
+
 {% endblock %}

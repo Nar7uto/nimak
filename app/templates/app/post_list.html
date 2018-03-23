@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<div class="row">
-    {% for p in post_list %}
-    <div class="col-six">
-        <a href="{{ p.slug }}"><span class="title">{{ p.title }}</span></a>
-    </div>
-    {% endfor %}
+<section id="posts">
+    <div class="row section-intro ">
+        {% for p in post_list %}
+   		<div class="col-six">
 
-</div>
+   			<h5>{{ p.pub|date:"M d, Y" }}</h5>
+   			<h3><a href="{{ p.slug }}"> {{ p.title }}</a></h3>
 
+   		</div>
+        {% endfor %}
+   	</div> <!-- /section-intro -->
+</section>
 {% endblock %}

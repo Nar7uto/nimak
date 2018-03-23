@@ -30,3 +30,8 @@
 #stats{
   background: #00adef;
 }
+
+#posts {
+  background-color: white;
+  padding-top: 10% !important;
+}
