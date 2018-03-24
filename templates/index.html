@@ -1,353 +1,487 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-    	<!-- intro section
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- intro section
    ================================================== -->
-   <section id="intro">
+<section id="intro">
 
-   	<div class="intro-overlay"></div>
+	<div class="intro-overlay"></div>
 
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-   			  <h1>Nima Karimi</h1>
-
-   			  <p class="intro-position"> <span>computer software engineer</span></p>
-                <ul class="intro-social">
-        <li><a href="https://facebook.com/K4rimi"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/nim4/"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://github.com/nim4karimi/"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://twitter.com/nim4karimi/"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/nim4karimi/"><i class="fa fa-linkedin"></i></a></li>
-    </ul> <!-- /intro-social -->
-   			  <a id="ssss" class="button smoothscroll" href="#about" title="">More About Me</a>
-
-	   		</div>
-
-   		</div>
-   	</div> <!-- /intro-content -->
-
-
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="{% static 'app/images/Avatar.jpg' %}" alt="Nima Karimi">
-
-   				<p class="lead">As a Software front-end engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
-   			</div>
-
-   		</div>
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-   			<p>I’m always looking for opportunities to work with talented people. If you have a project you’d like to collaborate on, have an amazing job offer or just want to say “hi” – I’d love to hear from you. If you're in the iran - urmia area, let's get a coffee.</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Nima Karimi</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>93 March 28</span>
-   				</li>
-                <li>
-                    <strong>Nationality:</strong>
-                    <span>Iran 🇮🇷</span>
-                </li>
-                <li>
-                    <strong>Relocation :</strong>
-                    <span>Yes</span>
-                </li>
-   				<li>
-   					<strong>Ongoing:</strong>
-   					<span>Freelancer, Co founder at <a href="https://herotek.ir">herotek ®</a></span>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>nima.karimi@live.com</span>
-   				</li>
-                <li>
-                    <strong>Phone :</strong>
-                    <span>+989141436088</span>
-
-                </li>
-
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-
-   			<h3>Technologys</h3>
-   			<p>eye-catching, and engaging responsive design created with python frameworks PyQt5 , KIVY , HTML5 & CSS3, JavaScript & JQuery.I am familiar with backend technologies such as Ruby, Python, Django , Flask , SQL, and Bootstrap framework.</p>
-
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Python3 <small>-Programming </small></strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Front end development</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent60"><span>60%</span></div>
-				   	<strong>CMS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>80%</span></div>
-				   	<strong>Industrial & Graphic design</strong>
-				   </li>
-				</ul> <!-- /skill-bars -->
-
-   		</div>
-
-   	</div>
-
-{#   	<div class="row button-section">#}
-{#   		<div class="col-twelve">#}
-{#   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>#}
-{#   			<a href="#contact" title="Say Hello !" class="button stroke smoothscroll">Say Hello !</a>#}
-{#   		</div>#}
-{#   	</div>#}
-
-   </section> <!-- /process-->
-
-    	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-
+	<div class="intro-content">
 		<div class="row">
+
 			<div class="col-twelve">
+				<h1>Nima Karimi</h1>
 
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+				<p class="intro-position">
+					<span>computer software engineer</span>
+				</p>
+				<ul class="intro-social">
+					<li>
+						<a href="https://facebook.com/K4rimi">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/nim4/">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/nim4karimi/">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/nim4karimi/">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/nim4karimi/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- /intro-social -->
+				<a id="ssss" class="button smoothscroll" href="#about" title="">More About Me</a>
 
-					<div class="bgrid stat">
+			</div>
 
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
+		</div>
+	</div>
+	<!-- /intro-content -->
 
-						<h3 class="stat-count">
-							35
-						</h3>
 
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
 
-					</div> <!-- /stat -->
+</section>
+<!-- /intro -->
 
-					<div class="bgrid stat">
 
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							14
-						</h3>
-
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-badge"></i>
-						</div>
-
-						<h3 class="stat-count">
-							2
-						</h3>
-
-						<h5 class="stat-title">
-							Awards Received
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							4
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1500
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							6
-						</h3>
-
-						<h5 class="stat-title">
-							Years experience
-						</h5>
-
-					</div> <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-
-	</section> <!-- /stats -->
-
-	<!-- services Section
+<!-- about section
    ================================================== -->
-	<section id="services">
+<section id="about">
 
-		<div class="overlay"></div>
+	<div class="row section-intro">
+		<div class="col-twelve">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+			<h5>About</h5>
+			<h1>Let me introduce myself.</h1>
 
-   			<h5>Services</h5>
-   			<h1>What Can I Do For You?</h1>
+			<div class="intro-info">
 
-   		</div>
-   	</div> <!-- /section-intro -->
+				<img src="{% static 'app/images/Avatar.jpg' %}" alt="Nima Karimi">
 
-   	<div class="row services-content">
+				<p class="lead">As a Software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with
+					my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and
+					efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+			</div>
 
-   		<div id="owl-slider" class="owl-carousel services-list">
+		</div>
+	</div>
+	<!-- /section-intro -->
 
-	      	<div class="service">
+	<div class="row about-content">
 
-	      		<span class="icon"><i class="icon-earth"></i></span>
+		<div class="col-six tab-full">
 
-	            <div class="service-content">
+			<h3>Profile</h3>
+			<p>I’m always looking for opportunities to work with talented people and company . If you have a project you’d like to collaborate
+				on, have an amazing job offer or just want to say “hi” – I’d love to hear from you. If you're in the iran - urmia area,
+				let's get a coffee in my office :).</p>
 
-	            	 <h3>Webdesign</h3>
+			<ul class="info-list">
+				<li>
+					<strong>Fullname:</strong>
+					<span>Nima Karimi</span>
+				</li>
+				<li>
+					<strong>Birth Date :</strong>
+					<span>93 March 28</span>
+				</li>
+				<li>
+					<strong>Nationality :</strong>
+					<span>Iran</span>
+				</li>
+				<li>
+					<strong>Relocation :</strong>
+					<span>Yes</span>
+				</li>
+                <li>
+                    <strong>Military Service :</strong>
+                    <span>Done 1 year Sergeant III</span>
+                </li>
+				<li>
+					<strong>Ongoing :</strong>
+					<span>Freelancer, Co founder at
+						<a href="https://herotek.ir">herotek ®</a>
+					</span>
+				</li>
+				<li>
+					<strong>Email :</strong>
+					<span>nima.karimi@live.com</span>
+				</li>
+				<li>
+					<strong>Phone :</strong>
+					<span>+989141436088</span>
+
+				</li>
+
+			</ul>
+			<!-- /info-list -->
+
+		</div>
+
+		<div class="col-six tab-full">
+
+			<h3>Technologys</h3>
+			<p>eye-catching, and engaging responsive design created with python frameworks PyQt5 , KIVY , HTML5 & CSS3, JavaScript &
+				JQuery.I am familiar with backend technologies such as Ruby, Python, Django , Flask , SQL, and Bootstrap framework.</p>
+
+			<ul class="skill-bars">
+				<li>
+					<div class="progress percent95"></div>
+					<strong>Graphic design</strong>
+					<small>Adobe Photoshop , Adobe illustrator , Adobe XD , gimp , Wireframe </small>
+				</li>
+				<li>
+					<div class="progress percent75"></div>
+					<strong>Programming</strong>
+					<small>Python , Ruby , Django , Flask , Tkinter , Pyqt5 , Kivy </small>
+				</li>
+				<li>
+					<div class="progress percent60">
+					</div>
+					<strong>Web Development</strong>
+                    <small>HTML5 , RESTful , Sass  , Nginx , Gunicorn ,Git , bash , Websocket , PostgreSQL , MaterializeCSS , Bootstrap , Wordpress </small>
+				</li>
+                <br>
+                <br>
+				<li>
+					<div class="progress percent85">
+					</div>
+					<strong>Industrial & Graphic design</strong>
+				</li>
+			</ul>
+			<!-- /skill-bars -->
+
+		</div>
+
+	</div>
+
+	<div class="row button-section">
+		<div class="col-twelve">
+			<a href="{% url 'resume' %}" title="Resume" class="button stroke">Work Experience</a>
+			<a href="{% url 'portfolio' %}" title="Portfolio" class="button stroke">Portfolio</a>
+		</div>
+	</div>
+
+</section>
+<!-- /process-->
+
+<!-- stats Section
+   ================================================== -->
+<section id="stats" class="count-up">
+
+	<div class="row">
+		<div class="col-twelve">
+
+			<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-pencil-ruler"></i>
+					</div>
+
+					<h3 class="stat-count">
+						23
+					</h3>
+
+					<h5 class="stat-title">
+						Projects Completed
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-users"></i>
+					</div>
+
+					<h3 class="stat-count">
+						14
+					</h3>
+
+					<h5 class="stat-title">
+						Happy Clients
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-badge"></i>
+					</div>
+
+					<h3 class="stat-count">
+						2
+					</h3>
+
+					<h5 class="stat-title">
+						Awards Received
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-light-bulb"></i>
+					</div>
+
+					<h3 class="stat-count">
+						4
+					</h3>
+
+					<h5 class="stat-title">
+						Crazy Ideas
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-cup"></i>
+					</div>
+
+					<h3 class="stat-count">
+						12
+					</h3>
+
+					<h5 class="stat-title">
+						Convention
+
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+				<div class="bgrid stat">
+
+					<div class="icon-part">
+						<i class="icon-clock"></i>
+					</div>
+
+					<h3 class="stat-count">
+						5
+					</h3>
+
+					<h5 class="stat-title">
+						Years experience
+					</h5>
+
+				</div>
+				<!-- /stat -->
+
+			</div>
+			<!-- /stats-list -->
+
+		</div>
+		<!-- /twelve -->
+	</div>
+	<!-- /row -->
+
+</section>
+<!-- /stats -->
+
+<!-- services Section
+   ================================================== -->
+<section id="services">
+
+	<div class="overlay"></div>
+
+	<div class="row section-intro">
+		<div class="col-twelve">
+
+			<h5>Services</h5>
+			<h1>What Can I Do For You?</h1>
+
+		</div>
+	</div>
+	<!-- /section-intro -->
+
+	<div class="row services-content">
+
+		<div id="owl-slider" class="owl-carousel services-list">
+
+			<div class="service">
+
+				<span class="icon">
+					<i class="icon-earth"></i>
+				</span>
+
+				<div class="service-content">
+					<h3>Web development</h3>
+				</div>
+
+			</div>
+			<!-- /service -->
+
+			<div class="service">
+
+				<span class="icon">
+					<i class="icon-window"></i>
+				</span>
+
+				<div class="service-content">
+
+					<h3>App Development</h3>
 
 
-	         	</div>
+				</div>
 
-				</div> <!-- /service -->
+			</div>
+			<!-- /service -->
+			<div class="service">
+				<span class="icon">
+					<i class="icon-paint-brush"></i>
+				</span>
+				<div class="service-content">
+					<h3>Branding</h3>
+				</div>
 
-				<div class="service">
+			</div>
+			<!-- /service -->
 
-					<span class="icon"><i class="icon-window"></i></span>
+			<div class="service">
 
-	            <div class="service-content">
+				<span class="icon">
+					<i class="icon-toggles"></i>
+				</span>
 
-	            	<h3>Web Development</h3>
+				<div class="service-content">
 
+					<h3>UI/UX Design</h3>
 
-	            </div>
+				</div>
 
-			   </div> <!-- /service -->
+			</div>
+			<!-- /service -->
 
-			   <div class="service">
+			<div class="service">
 
-			   	<span class="icon"><i class="icon-paint-brush"></i></span>
+				<span class="icon">
+					<i class="icon-image"></i>
+				</span>
 
-	            <div class="service-content">
+				<div class="service-content">
 
-	            	<h3>Branding</h3>
-
-
-	            </div>
-
-			   </div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>
-
-	            <div class="service-content">
-
-	            	<h3>UI/UX Design</h3>
-
-	            </div>
-
-				</div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-image"></i></span>
-
-	            <div class="service-content">
-
-	            	<h3>Graphics Design</h3>
+					<h3>Graphics Design</h3>
 
 
-	            </div>
+				</div>
 
-			   </div> <!-- /service -->
+			</div>
+			<!-- /service -->
 
-			   <div class="service">
+			<div class="service">
 
-			   	<span class="icon"><i class="icon-chat"></i></span>
+				<span class="icon">
+					<i class="icon-chat"></i>
+				</span>
 
-	            <div class="service-content">
+				<div class="service-content">
 
-	            	 <h3>Consultancy</h3>
+					<h3>Consultancy</h3>
 
 
 
-	            </div>
+				</div>
 
-			   </div> <!-- /service -->
+			</div>
+			<!-- /service -->
 
-	      </div> <!-- /services-list -->
+		</div>
+		<!-- /services-list -->
 
-   	</div> <!-- /services-content -->
+	</div>
+	<!-- /services-content -->
 
-	</section> <!-- /services -->
+</section>
+<!-- /services -->
 
 
+{##}
+{#<!-- contact#}
+{#   ================================================== -->#}
+{#<section id="contact">#}
+{##}
+{#	<div class="row section-intro">#}
+{#		<div class="col-twelve">#}
+{##}
+{#			<h5>Contact</h5>#}
+{#			<h1>I'd Love To Hear From You.</h1>#}
+{##}
+{##}
+{#		</div>#}
+{#	</div>#}
+{#	<!-- /section-intro -->#}
+{##}
+{#	<div class="row contact-form">#}
+{##}
+{#		<div class="col-twelve">#}
+{##}
+{#			<!-- form -->#}
+{#			<form name="contactForm" id="contactForm" method="post" action="mailto:hi@nim4.ir">#}
+{#				<fieldset>#}
+{##}
+{#					<div class="form-field">#}
+{#						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">#}
+{#					</div>#}
+{#					<div class="form-field">#}
+{#						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">#}
+{#					</div>#}
+{#					<div class="form-field">#}
+{#						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">#}
+{#					</div>#}
+{#					<div class="form-field">#}
+{#						<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>#}
+{#					</div>#}
+{#					<div class="form-field">#}
+{#						<button class="submitform">Submit</button>#}
+{#						<div id="submit-loader">#}
+{#							<div class="text-loader">Sending...</div>#}
+{#							<div class="s-loader">#}
+{#								<div class="bounce1"></div>#}
+{#								<div class="bounce2"></div>#}
+{#								<div class="bounce3"></div>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{##}
+{#				</fieldset>#}
+{#			</form>#}
+{#			<!-- Form End -->#}
+{##}
+{#			<!-- contact-warning -->#}
+{#			<div id="message-warning">#}
+{#			</div>#}
+{#			<!-- contact-success -->#}
+{#			<div id="message-success">#}
+{#				<i class="fa fa-check"></i>Your message was sent, thank you!#}
+{#				<br>#}
+{#			</div>#}
+{##}
+{#		</div>#}
+{#		<!-- /col-twelve -->#}
+{##}
+{#	</div>#}
+{#	<!-- /contact-form -->#}
 
-
-{% endblock %}
+	{% endblock %}
