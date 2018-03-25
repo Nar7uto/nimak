@@ -5,9 +5,14 @@
 
             <h1> {{ object.title }} </h1>
             <p>{{ object.pub }}</p>
-            {{ object.pic }}
+            <hr>
+            <img src="{{ object.pic.url }}">
             <p>{{ object.body }}</p>
-            {{ object.tag }}
+            {% for tag in tags %}
+            <a href="{% url 'tagged' tag.slug %}">{{ tag.name }}</a>
+            {% empty %}
+            No Tags
+            {% endfor %}
         </div>
 
     </section>

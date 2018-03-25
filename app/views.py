@@ -2,6 +2,8 @@ from django.shortcuts import render
 # +++ Import Detail & List View +++
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
+# +++ Import Tag +++
+from taggit.models import Tag
 # +++ Import Custom models +++
 from app.models import Post
 # +++ import Utils +++
@@ -23,19 +25,38 @@ def portfolio(request):
 
 
 # === Post Detail View ===
-class PostDetailView(DetailView):
+class TagMixin(object):
+    def get_context_data(self, **kwargs):
+        context = super(TagMixin, self).get_context_data(**kwargs)
+        context['tags'] = Tag.objects.all()
+        return context
+
+# === Post Detail View ===
+class PostDetailView(TagMixin, DetailView):
     model = Post
+    context_object_name = 'posts'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['-now'] = timezone.now()
+        context['now'] = timezone.now()
         return context
 
 # === Post List View ===
-class PostListView(ListView):
+class PostListView(TagMixin, ListView):
     model = Post
-
+    paginate_by = '20'
+    queryset = Post.objects.all()
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['-now'] = timezone.now()
+        context['now'] = timezone.now()
         return context
+
+class TagPostView(TagMixin, ListView):
+    template_name = 'app/post_list.html'
+    model = Post
+    paginate_by = '20'
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        return Post.objects.filter(tags__slug=self.kwargs.get('slug'))
+
