@@ -241,7 +241,7 @@ th {
 
 /**
  * ===================================================================
- * 02. basic/base setup styles - (_basic.scss)
+ * 02. basic/base setup styles
  *
  * -------------------------------------------------------------------
  */
@@ -273,7 +273,7 @@ button {
 }
 
 /**
- * Media - (_basic.scss)
+ * Media
  * -------------------------------------------------------------------
  */
 img,
@@ -283,7 +283,7 @@ video {
 }
 
 /**
- * Typography resets - (_basic.scss)
+ * Typography resets
  * -------------------------------------------------------------------
  */
 div,
@@ -348,7 +348,7 @@ li {
 }
 
 /**
- * links - (_basic.scss)
+ * links
  * -------------------------------------------------------------------
  */
 a {
@@ -361,7 +361,7 @@ a img {
 }
 
 /**
- * inputs - (_basic.scss)
+ * inputs
  * -------------------------------------------------------------------
  */
 fieldset {
@@ -386,7 +386,7 @@ textarea {
 
 /**
  * ===================================================================
- * 03. grid - (_grid.scss)
+ * 03. grid
  *
  * -------------------------------------------------------------------
  */
@@ -483,7 +483,7 @@ textarea {
 }
 
 /**
- * small screens - (_grid.scss)
+ * small screens
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:1024px) {
@@ -499,7 +499,7 @@ textarea {
 }
 
 /**
- * tablets - (_grid.scss)
+ * tablets
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:768px) {
@@ -547,7 +547,7 @@ textarea {
 }
 
 /**
- * large mobile devices - (_grid.scss)
+ * large mobile devices
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:600px) {
@@ -584,7 +584,7 @@ textarea {
 }
 
 /**
- * small mobile devices - (_grid.scss)
+ * small mobile devices
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:400px) {
@@ -612,7 +612,7 @@ textarea {
 
 /**
  * ===================================================================
- * block grids - (_grid.scss)
+ * block grids
  *
  * -------------------------------------------------------------------
  */
@@ -654,7 +654,7 @@ textarea {
 }
 
 /**
- * small screens - (_grid.scss)
+ * small screens
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:1024px) {
@@ -693,7 +693,7 @@ textarea {
 }
 
 /**
- * tablets - (_grid.scss)
+ * tablets
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:768px) {
@@ -732,7 +732,7 @@ textarea {
 }
 
 /**
- * large mobile devices - (_grid.scss)
+ * large mobile devices
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:600px) {
@@ -771,7 +771,7 @@ textarea {
 }
 
 /**
- * stack on small mobile devices - (_grid.scss)
+ * stack on small mobile devices
  * ---------------------------------------------------------------
  */
 @media screen and (max-width:400px) {
@@ -787,13 +787,13 @@ textarea {
 
 /**
  * ===================================================================
- * 04. MISC  - (_grid.scss)
+ * 04. MISC
  *
  * -------------------------------------------------------------------
  */
 
 /**
- * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+ * Clearing
  */
 .group:before,
 .group:after {

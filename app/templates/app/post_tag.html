@@ -3,11 +3,11 @@
 {% block content %}
 <section id="posts">
     <div class="row section-intro ">
-        {% for p in post_list %}
+        {% for post in posts %}
    		<div class="col-six">
-   			<h3><a href="{{ p.slug }}"> {{ p.title }}</a></h3>
-            <a href="{{ p.slug }}"><img src="{{ p.pic.url }}"></a>
-            <h5>{{ p.pub|date:"M d, Y" }}</h5>
+   			<h3><a href="{{ post.slug }}"> {{ post.title }}</a></h3>
+            <a href="{{ post.slug }}"><img src="{{ post.pic.url }}"></a>
+            <h5>{{ post.pub|date:"M d, Y" }}</h5>
    		</div>
         {% endfor %}
    	</div> <!-- /section-intro -->
