@@ -2,17 +2,22 @@
 {% block content %}
     <section id="posts">
         <div class="row">
+            <div class="col-nine">
+                <h1> {{ object.title }} </h1>
+                <p>{{ object.pub }}</p>
+              <hr>
+                <img src="{{ object.pic.url }}">
+                <p>{{ object.body }}</p>
+            </div>
+            <div class="col-three">
+                <h3>Tags :</h3>
+                {% for tag in tags %}
+                <a href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
+                {% empty %}
+                No Tags :)
+                {% endfor %}
+            </div>
 
-            <h1> {{ object.title }} </h1>
-            <p>{{ object.pub }}</p>
-            <hr>
-            <img src="{{ object.pic.url }}">
-            <p>{{ object.body }}</p>
-            {% for tag in tags %}
-            <a href="{% url 'tagged' tag.slug %}">{{ tag.name }}</a>
-            {% empty %}
-            No Tags :)
-            {% endfor %}
         </div>
 
     </section>

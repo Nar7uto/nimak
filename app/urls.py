@@ -18,8 +18,6 @@ urlpatterns = [
     path('',index , name ='home'),
 
     # Post
-    # path('posts/', PostListView.as_view(), name='posts'),
-    # path('posts/<slug:slug>/', PostDetailView.as_view() , name ='post-detail'),
     path('posts/', PostListView.as_view(), name='posts'),
     path('posts/tag/<slug:slug>', TagPostView.as_view(), name='tagged'),
     path('posts/<slug:slug>/', PostDetailView.as_view(), name = 'post-detail'),

@@ -46,6 +46,7 @@ class PostListView(TagMixin, ListView):
     model = Post
     paginate_by = '20'
     queryset = Post.objects.all().order_by('-pub')
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
@@ -60,4 +61,3 @@ class TagPostView(TagMixin, ListView):
 
     def get_queryset(self):
         return Post.objects.filter(tags__slug=self.kwargs.get('slug'))
-
