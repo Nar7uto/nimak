@@ -7,7 +7,7 @@
 
    <!--- basic page -->
   <meta charset="utf-8">
-	<title>Nima Karimi | Personal page</title>
+	<title>{% block title %} Nima Karimi  {% endblock %}</title>
 	<meta name="description" content="computer software engineer">
 	<meta name="author" content="Nim4 Karimi ,">
 
@@ -97,8 +97,10 @@
 
       	<div class="col-full tab-full">
 	      	<div class="copyright">
-		        	<span>© MIT license Nima Karimi 2010-2018.</span>
+                    <span>Power by <a href="https://www.djangoproject.com/">DJANGO</a></span>
+		        	<span>© Nima Karimi 2010-2018.</span>
 		        	<span>Fork at <a href="https://github.com/nim4karimi/nimak"><i class="fa fa-github-alt"></i> Github</a></span>
+
 		         </div>
 	      	</div>
 
@@ -120,34 +122,4 @@
    <script src="{% static 'app/js/main.js' %}"></script>
 
 </body>
-
 </html>
-
-
-
-
-
-{#<!DOCTYPE html>#}
-{#{% load static %}#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
-{#    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">#}
-{#    <link rel="stylesheet" href="{% static 'app/css/materialize.css' %}">#}
-{#    <title>Title</title>#}
-{#</head>#}
-{#<body>#}
-{#{% include 'include/_menu.html' %}#}
-{#{% block content %}#}
-{#{% endblock %}#}
-{#    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>#}
-{#    <script src="{% static 'app/js/materialize.min.js' %}"></script>#}
-{##}
-{#    <script>#}
-{#        $(document).ready(function(){#}
-{#            $('.sidenav').sidenav();#}
-{#        });#}
-{#    </script>#}
-{#</body>#}
-{#</html>#}

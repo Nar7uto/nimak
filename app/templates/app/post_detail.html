@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %}{{ block.super }} | {{ object.title }} {% endblock %}
 {% block content %}
     <section id="posts">
         <div class="row">
