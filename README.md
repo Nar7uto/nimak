@@ -8,7 +8,6 @@
 
 * Document available in Files :)
 ```
-
 beautifulsoup4==4.4.0
 coverage==4.4
 csscompressor==0.9.4
@@ -16,6 +15,7 @@ Cython==0.28.1
 Django==2.0.3
 django-appconf==1.0.2
 django-classy-tags==0.8.0
+django-compressor==2.2
 django-sekizai==0.9.0
 django-taggit==0.22.2
 flake8==2.4.0
@@ -28,8 +28,9 @@ pep8==1.5.7
 Pillow==5.0.0
 pyflakes==0.8.1
 pytz==2018.3
+rcssmin==1.0.6
+rjsmin==1.0.12
 six==1.11.0
-
 ```
 ## Self Driven application 
 > Rebuild in  -  [2018-3-23] <br>
@@ -37,55 +38,21 @@ Firstborn in - [2010-3-28]
 
 
 ```
-│   .gitignore
-│   db.sqlite3
-│   manage.py
-│   README.md
-│   TODO.org
-│
-├───.idea
-│   │   dataSources.local.xml
-│   │   dataSources.xml
-│   │   misc.xml
-│   │   modules.xml
-│   │   nimak.iml
-│   │   vcs.xml
-│   │   workspace.xml
-│   │
-│   ├───dataSources
-│   │   │   e478ae7f-ecc1-4ed9-ac3e-16fd9d0cf0de.xml
-│   │   │
-│   │   └───e478ae7f-ecc1-4ed9-ac3e-16fd9d0cf0de
-│   │       └───storage_v2
-│   │           └───_src_
-│   │               └───schema
-│   │                       main.uQUzAA.meta
-│   │
-│   └───inspectionProfiles
+
 ├───app
-│   │   admin.py
-│   │   apps.py
-│   │   models.py
+│   │   admin.py --> Register Model in Admin Django
+│   │   apps.py --> App Config
+│   │   models.py --> database Models
 │   │   tests.py
-│   │   urls.py
-│   │   views.py
+│   │   urls.py --> Url Include to main
+│   │   views.py --> View Func and Class
 │   │   __init__.py
 │   │
-│   ├───migrations
-│   │   │   0001_initial.py
-│   │   │   0002_auto_20180323_1323.py
-│   │   │   __init__.py
-│   │   │
-│   │   └───__pycache__
-│   │           0001_initial.cpython-36.pyc
-│   │           0002_auto_20180323_1323.cpython-36.pyc
-│   │           __init__.cpython-36.pyc
-│   │
 │   ├───static
-│   │   └───app
+│   │   └───app --> App Static Files
 │   │       │   favicon.ico
 │   │       │
-│   │       ├───css
+│   │       ├───css --> include all Stylesheet
 │   │       │   │   base.css
 │   │       │   │   fonts.css
 │   │       │   │   main.css
@@ -167,7 +134,7 @@ Firstborn in - [2010-3-28]
 │   │       │       │   stylesheet.css
 │   │       │       │
 │   │       │       └───_notes
-│   │       ├───images
+│   │       ├───images --> Static Images
 │   │       │   │   Avatar.jpg
 │   │       │   │   bg.jpg
 │   │       │   │   intro-bg1.jpg
@@ -185,53 +152,33 @@ Firstborn in - [2010-3-28]
 │   │       │   │   │   │   m-dev.jpg
 │   │       │   │   │   │   m-ux.jpg
 │   │       │   │   │   │   m-wb.jpg
-│   │       │   │   │   │
-│   │       │   │   │   └───_notes
-│   │       │   │   └───_notes
-│   │       │   └───_notes
-│   │       ├───inc
-│   │       │   │   sendEmail.php
-│   │       │   │
-│   │       │   └───_notes
-│   │       └───js
+│   │       └───js --> include all Js 
 │   │           │   jquery-2.1.3.min.js
 │   │           │   main.js
 │   │           │   modernizr.js
 │   │           │   pace.min.js
 │   │           │   plugins.js
-│   │           │
-│   │           └───_notes
-│   ├───templates
+│   │           
+│   │ 
+│   ├───templates --> App Template 
 │   │   └───app
-│   │           post_detail.html
-│   │           post_list.html
-│   │
-│   └───__pycache__
-│           admin.cpython-36.pyc
-│           apps.cpython-36.pyc
-│           models.cpython-36.pyc
-│           urls.cpython-36.pyc
-│           views.cpython-36.pyc
-│           __init__.cpython-36.pyc
+│   │           post_detail.html --> Post Detail View
+│   │           post_list.html --> Post List View
+│               post_tag.html --> Post Tag View
 │
-├───media
+├───media --> Upload Dir from Admin Panel
 │   └───posts
 │           123.png
 │           123_sUtBGEo.png
 │
-├───nimak
-│   │   settings.py
-│   │   urls.py
+├───nimak --> MAIN PROJECT FILEs
+│   │   settings.py --> ** Most Important 
+│   │   urls.py --> Urls 
 │   │   wsgi.py
 │   │   __init__.py
 │   │
-│   └───__pycache__
-│           settings.cpython-36.pyc
-│           urls.cpython-36.pyc
-│           wsgi.cpython-36.pyc
-│           __init__.cpython-36.pyc
 │
-├───static
+├───static --> Collected Static File 
 │   └───admin
 │       ├───css
 │       │   │   autocomplete.css
@@ -310,78 +257,14 @@ Firstborn in - [2010-3-28]
 │           │       DateTimeShortcuts.js
 │           │       RelatedObjectLookups.js
 │           │
-│           └───vendor
-│               ├───jquery
-│               │       jquery.js
-│               │       jquery.min.js
-│               │       LICENSE-JQUERY.txt
-│               │
-│               ├───select2
-│               │   │   LICENSE-SELECT2.md
-│               │   │   select2.full.js
-│               │   │   select2.full.min.js
-│               │   │
-│               │   └───i18n
-│               │           ar.js
-│               │           az.js
-│               │           bg.js
-│               │           ca.js
-│               │           cs.js
-│               │           da.js
-│               │           de.js
-│               │           el.js
-│               │           en.js
-│               │           es.js
-│               │           et.js
-│               │           eu.js
-│               │           fa.js
-│               │           fi.js
-│               │           fr.js
-│               │           gl.js
-│               │           he.js
-│               │           hi.js
-│               │           hr.js
-│               │           hu.js
-│               │           id.js
-│               │           is.js
-│               │           it.js
-│               │           ja.js
-│               │           km.js
-│               │           ko.js
-│               │           lt.js
-│               │           lv.js
-│               │           mk.js
-│               │           ms.js
-│               │           nb.js
-│               │           nl.js
-│               │           pl.js
-│               │           pt-BR.js
-│               │           pt.js
-│               │           ro.js
-│               │           ru.js
-│               │           sk.js
-│               │           sr-Cyrl.js
-│               │           sr.js
-│               │           sv.js
-│               │           th.js
-│               │           tr.js
-│               │           uk.js
-│               │           vi.js
-│               │           zh-CN.js
-│               │           zh-TW.js
-│               │
-│               └───xregexp
-│                       LICENSE-XREGEXP.txt
-│                       xregexp.js
-│                       xregexp.min.js
 │
-└───templates
-    │   base.html
+└───templates --> Main Template 
+    │   base.html --> Base template for extends
     │   index.html
     │   portfolio.html
     │   resume.html
     │
     └───include
-            _menu.html
+            _menu.html --> Include to Base template
 
 ```
