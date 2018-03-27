@@ -10,12 +10,15 @@
                 <p>{{ object.body }}</p>
             </div>
             <div class="col-three">
+                <button class="stroke"><a href="{% url 'posts' %}">Back</a></button>
+            <hr>
                 <h3>Tags :</h3>
                 {% for tag in tags %}
-                <a href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
+                <a class="chips" href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
                 {% empty %}
                 No Tags :)
                 {% endfor %}
+                <hr>
             </div>
 
         </div>

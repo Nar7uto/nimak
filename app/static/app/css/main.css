@@ -2637,4 +2637,28 @@ footer .copyright span:last-child::after {
 #posts h5 {
 	font-size: 8px !important;
 }
+
+.chips {
+	display: inline !important;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0 !important;
+    height: 5.4rem;
+    line-height: 0rem !important;
+    padding: 2px 2px 2px 2px ;
+    margin: 0 .3rem 1.2rem 0;
+    background: #d8d8d8;
+    color: #313131;
+    text-decoration: none;
+    cursor: crosshair;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 25px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 /*# sourceMappingURL=main.css.map - Nim4*/

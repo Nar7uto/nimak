@@ -2,14 +2,25 @@
 {% load static %}
 {% block content %}
 <section id="posts">
-    <div class="row section-intro ">
+    <div class="row">
+
+   		<div class="col-nine">
         {% for p in post_list %}
-   		<div class="col-six">
    			<h3><a href="{{ p.slug }}"> {{ p.title }}</a></h3>
             <a href="{{ p.slug }}"><img src="{{ p.pic.url }}"></a>
             <h5>{{ p.pub|date:"M d, Y" }}</h5>
-   		</div>
-        {% endfor %}
+            <hr>
+   		 {% endfor %}
+        </div>
+        <div class="col-three">
+            <h3>Tags :</h3>
+            {% for tag in tags %}
+            <a class="chips"  href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
+            {% empty %}
+            No Tags :)
+            {% endfor %}
+            <hr>
+        </div>
    	</div> <!-- /section-intro -->
 </section>
 {% endblock %}
