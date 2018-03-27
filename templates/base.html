@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 {% load compress %}
+{% load analytical %}
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
@@ -34,7 +35,9 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="{% static 'app/favicon.ico' %}">
-
+    <!-- analytic -->
+    {% analytical_head_top %}
+    {% analytical_head_bottom %}
 </head>
 
 <body id="top">
@@ -123,11 +126,11 @@
 
    <!-- Java Script
    ================================================== -->
-   {% compress js %}
-   <script src="{% static 'app/js/jquery-2.1.3.min.js' %}"></script>
-   <script src="{% static 'app/js/plugins.js' %}"></script>
-   <script src="{% static 'app/js/main.js' %}"></script>
-   {% endcompress %}
-
+    {% compress js %}
+    <script src="{% static 'app/js/jquery-2.1.3.min.js' %}"></script>
+    <script src="{% static 'app/js/plugins.js' %}"></script>
+    <script src="{% static 'app/js/main.js' %}"></script>
+    {% endcompress %}
+    {% analytical_body_top %}{% analytical_body_bottom %}
 </body>
 </html>

@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     # pip install django-taggit
     # App for Making tagg field
     'taggit',
+    #Django Compressor
     'compressor',
+    #Django Analytical
+    'analytical',
 
 ]
 
@@ -141,4 +144,8 @@ COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',  'co
 # Media Files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+#analytical
+# GOOGLE_ANALYTICS_PROPERTY_ID = ''
+
 
