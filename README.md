@@ -7,7 +7,30 @@
 `ubuntu 16.04 LTS`
 
 * Document available in Files :)
+```
 
+beautifulsoup4==4.4.0
+coverage==4.4
+csscompressor==0.9.4
+Cython==0.28.1
+Django==2.0.3
+django-appconf==1.0.2
+django-classy-tags==0.8.0
+django-sekizai==0.9.0
+django-taggit==0.22.2
+flake8==2.4.0
+html5lib==0.9999999
+Jinja2==2.7.3
+MarkupSafe==1.0
+mccabe==0.3.1
+mock==1.0.1
+pep8==1.5.7
+Pillow==5.0.0
+pyflakes==0.8.1
+pytz==2018.3
+six==1.11.0
+
+```
 ## Self Driven application 
 > Rebuild in  -  [2018-3-23] <br>
 Firstborn in - [2010-3-28] 

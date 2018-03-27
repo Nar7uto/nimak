@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load compress %}
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
@@ -16,10 +17,14 @@
 
  	<!-- CSS
    ================================================== -->
+   {% compress css %}
    <link rel="stylesheet" href="{% static 'app/css/base.css' %}">
+   <link rel="stylesheet" href="{% static 'app/css/fonts.css' %}">
+   <link rel="stylesheet" href="{% static 'app/css/font-awesome/css/font-awesome.css' %}">
+   <link rel="stylesheet" href="{% static 'app/css/micons/micons.css' %}">
    <link rel="stylesheet" href="{% static 'app/css/main.css' %}">
    <link rel="stylesheet" href="{% static 'app/css/vendor.css' %}">
-
+    {% endcompress %}
    <!-- script
    ================================================== -->
 	<script src="{% static 'app/js/modernizr.js' %}"></script>

@@ -9,3 +9,4 @@ __pycach__
 *.egg-info
 *.pot
 *.py[co]
+.idea
