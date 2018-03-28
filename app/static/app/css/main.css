@@ -2630,8 +2630,8 @@ footer .copyright span:last-child::after {
 }
 
 #posts {
-  background-color: white;
-  padding-top: 10% !important;
+    background-color: white;
+    padding-top: 80px !important;
 }
 
 #posts h5 {
@@ -2660,5 +2660,10 @@ footer .copyright span:last-child::after {
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.fixi{
+	display: block;
+	position: sticky !important;
 }
 /*# sourceMappingURL=main.css.map - Nim4*/
