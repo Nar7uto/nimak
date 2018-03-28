@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58b588b-898f-4fdf-9816-bede4ee5adad" name="Default" comment="First Day">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/static/app/css/main.css" afterPath="$PROJECT_DIR$/app/static/app/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/app/static/app/css/style.css" afterPath="$PROJECT_DIR$/app/static/app/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/app/static/app/images/bg.jpg" afterPath="$PROJECT_DIR$/app/static/app/images/bg.jpg" />
       <change beforePath="$PROJECT_DIR$/app/templates/app/post_list.html" afterPath="$PROJECT_DIR$/app/templates/app/post_list.html" />
-      <change beforePath="$PROJECT_DIR$/nimak/settings.py" afterPath="$PROJECT_DIR$/nimak/settings.py" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/080b64410267.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/0c9c3365343a.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/1592bdf10e09.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/1e65a882580e.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/27b3d3377ed0.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/374f7f184266.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/4a263e5306f9.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/559643760565.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/57c1f1a3b46b.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/61b05a900456.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/69cc07ec75b0.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/6dad7a8e61f8.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/700e025676fb.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/8cb0f32c0159.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/8fb8d0b1b090.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/9319a0447bc0.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/992bc0fc9660.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/a0ab6341fa03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/a88eba411d1f.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/c4d01c570a38.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/cc6ff5a13864.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/d98ebe3cf944.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/d9aa14bae938.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/da6181fd53ef.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/edd7f254e1cc.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/ef4bcbcb6031.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/f101d00e887d.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/f2bafbc0ca79.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/CACHE/css/fe61c0a43e67.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/app/css/main.css" afterPath="$PROJECT_DIR$/static/app/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/app/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -115,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="601">
+              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -217,10 +182,10 @@
         <option value="$PROJECT_DIR$/app/templates/app/post_detail.html" />
         <option value="$PROJECT_DIR$/app/templates/app/post_tag.html" />
         <option value="$PROJECT_DIR$/nimak/settings.py" />
-        <option value="$PROJECT_DIR$/app/templates/app/post_list.html" />
         <option value="$PROJECT_DIR$/static/app/css/main.css" />
         <option value="$PROJECT_DIR$/app/static/app/css/main.css" />
         <option value="$PROJECT_DIR$/app/static/app/css/style.css" />
+        <option value="$PROJECT_DIR$/app/templates/app/post_list.html" />
       </list>
     </option>
   </component>
@@ -746,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/app/post_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/app/post_tag.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -796,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -831,7 +780,23 @@
     <entry file="file://$PROJECT_DIR$/app/static/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/app/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding />
         </state>
       </provider>
