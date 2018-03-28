@@ -148,6 +148,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 #analytical
-# GOOGLE_ANALYTICS_PROPERTY_ID = ''
+GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-116539833-1'
 
 

@@ -4,22 +4,27 @@
     <section id="posts">
         <div class="row">
             <div class="col-nine">
-                <h1> {{ object.title }} </h1>
-                <p>{{ object.pub }}</p>
+                <div class="cardz">
+                    <h1> {{ object.title }} </h1>
+                    <p>{{ object.pub }}</p>
               <hr>
-                <img src="{{ object.pic.url }}">
-                <p>{{ object.body|safe }}</p>
+                    <img src="{{ object.pic.url }}">
+                    <p>{{ object.body|safe }}</p>
+                </div>
+
             </div>
             <div class="col-three">
-                <a class="button" href="{% url 'posts' %}">Back</a>
-            <hr>
-                <h3>Tags :</h3>
+
+                <div class="cardz">
+                <h3>Cloud Tags :</h3>
                 {% for tag in tags %}
-                <a class="chips" href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
+                <a class="chips"  href="{% url 'tagged' tag.slug %}"  >{{ tag.name }}</a>
                 {% empty %}
                 No Tags :)
                 {% endfor %}
-                <hr>
+                </div>
+                <a class="button stroke" href="{% url 'posts' %}">Back</a>
+
             </div>
 
         </div>
