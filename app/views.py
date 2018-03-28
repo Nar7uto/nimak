@@ -5,7 +5,7 @@ from django.views.generic.detail import DetailView
 # +++ Import Tag +++
 from taggit.models import Tag
 # +++ Import Custom models +++
-from app.models import Post
+from app.models import Post , Portfolio
 # +++ import Utils +++
 from django.utils import timezone
 
@@ -56,7 +56,7 @@ class PostListView(TagMixin, ListView):
 class TagPostView(TagMixin, ListView):
     template_name = 'app/post_tag.html'
     model = Post
-    paginate_by = '20'
+    paginate_by = '50'
     context_object_name = 'posts'
 
     def get_queryset(self):

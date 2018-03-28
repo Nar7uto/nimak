@@ -17,6 +17,9 @@ class Post (models.Model):
     # __ Show in String __
     def __str__(self):
         return self.title
+    # __ Get Right Url ___
+    def get_absolute_url(self):
+        return "/posts/%s/" % self.slug
 
 
 # -- Portfolio --
@@ -24,7 +27,7 @@ class Post (models.Model):
 class Portfolio(models.Model):
     title = models.CharField(max_length=80)
     slug = models.SlugField()
-    thumb = models.ImageField(upload_to='portfolio/')
+    body = models.TextField()
     pic = models.ImageField(upload_to='portfolio/')
     pub = models.DateTimeField(auto_now=False)
     draft = models.BooleanField(default=False)

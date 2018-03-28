@@ -19,7 +19,7 @@ urlpatterns = [
 
     # Post
     path('posts/', PostListView.as_view(), name='posts'),
-    path('posts/tag/<slug:slug>', TagPostView.as_view(), name='tagged'),
+    path('posts/tags/<slug:slug>', TagPostView.as_view(), name='tagged'),
     path('posts/<slug:slug>/', PostDetailView.as_view(), name = 'post-detail'),
 
     # Resume
