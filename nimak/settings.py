@@ -25,7 +25,7 @@ SECRET_KEY = 'y2=^lm4of-3_lb%rmvfjm4qrrny783fzmlz(lbp+0fklxdr58)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['.nim4.ir','127.0.0.1']
 
 
 # Application definition
