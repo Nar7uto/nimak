@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'compressor',
     #Django Analytical
     'analytical',
+    #WYSGI Editor
+    'django_summernote',
 
 ]
 

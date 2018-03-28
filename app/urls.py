@@ -26,6 +26,9 @@ urlpatterns = [
     path('resume/', resume , name='resume'),
     # Portfolio
     path('portfolio/', portfolio , name='portfolio'),
+
+    # Summernote
+    re_path(r'^summernote/', include('django_summernote.urls')),
 ]
 
 

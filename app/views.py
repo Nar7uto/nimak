@@ -44,7 +44,7 @@ class PostDetailView(TagMixin, DetailView):
 # === Post List View ===
 class PostListView(TagMixin, ListView):
     model = Post
-    paginate_by = '20'
+    paginate_by = '1'
     queryset = Post.objects.all().order_by('-pub')
 
     def get_context_data(self, **kwargs):

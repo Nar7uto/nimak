@@ -8,10 +8,10 @@
                 <p>{{ object.pub }}</p>
               <hr>
                 <img src="{{ object.pic.url }}">
-                <p>{{ object.body }}</p>
+                <p>{{ object.body|safe }}</p>
             </div>
             <div class="col-three">
-                <button class="stroke"><a href="{% url 'posts' %}">Back</a></button>
+                <a class="button" href="{% url 'posts' %}">Back</a>
             <hr>
                 <h3>Tags :</h3>
                 {% for tag in tags %}

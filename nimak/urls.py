@@ -5,6 +5,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Import Url From Main App
     path('', include('app.urls')),
+
+
 ]
 
 
