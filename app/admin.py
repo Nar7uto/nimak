@@ -21,7 +21,7 @@ class ResumeAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('body')
     class Meta:
-        model: Resume
+        model = Resume
 
 admin.site.register(Resume,ResumeAdmin)
 
