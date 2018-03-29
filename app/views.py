@@ -3,11 +3,10 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.dates import YearArchiveView
-
 # +++ Import Tag +++
 from taggit.models import Tag
 # +++ Import Custom models +++
-from app.models import Post , Portfolio
+from app.models import Post , Portfolio , Resume
 # +++ import Utils +++
 from django.utils import timezone
 
@@ -19,14 +18,16 @@ def index(request):
 
 # === Resume ===
 def resume(request):
-    return render(request, 'resume.html')
+    content = Resume.objects.all().order_by('-start')
+    return render(request, 'resume.html', {'content':content})
 
 # === Portfolio ===
 def portfolio(request):
-    return render(request, 'portfolio.html')
+    content = Portfolio.objects.all().order_by('-pub')
+    return render(request, 'portfolio.html', {'content':content})
 
 
-# === Post Detail View ===
+# === Tag Mixin View ===
 class TagMixin(object):
     def get_context_data(self, **kwargs):
         context = super(TagMixin, self).get_context_data(**kwargs)

@@ -26,7 +26,7 @@ class Post (models.Model):
 
 class Portfolio(models.Model):
     title = models.CharField(max_length=80)
-    slug = models.SlugField()
+    sub = models.CharField(max_length=40 , null=True,blank=True)
     body = models.TextField()
     pic = models.ImageField(upload_to='portfolio/')
     pub = models.DateTimeField(auto_now=False)
@@ -35,3 +35,22 @@ class Portfolio(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# -- Resume --
+
+class Resume(models.Model):
+    title = models.CharField(max_length=80)
+    url = models.URLField(null=True,blank=True)
+    pic = models.ImageField(upload_to='resume/', blank=True, null=True)
+    position = models.CharField(max_length=40)
+    location = models.CharField(max_length=40)
+    start = models.DateField()
+    end = models.DateField(null=True, blank=True)
+    body = models.TextField()
+
+
+    def __str__(self):
+        return self.title
+
+

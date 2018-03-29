@@ -2,7 +2,7 @@ from django.contrib import admin
 #+++ Summernote +++
 from django_summernote.admin import SummernoteModelAdmin
 #+++ import models here. ++++
-from app.models import Post , Portfolio
+from app.models import Post , Portfolio , Resume
 
 
 admin.site.site_header = 'Nim4 Karimi - Django Panel :)'
@@ -15,6 +15,15 @@ class PostModelAdmin(SummernoteModelAdmin):
         model = Post
 
 admin.site.register(Post, PostModelAdmin)
+#=== Resume model admin ===
+class ResumeAdmin(SummernoteModelAdmin):
+    list_display = ['title','start', 'end' ]
+
+    summernote_fields = ('body')
+    class Meta:
+        model: Resume
+
+admin.site.register(Resume,ResumeAdmin)
 
 #=== Portfolio model admin ===
 class PortfolioAdmin(SummernoteModelAdmin):
@@ -24,3 +33,4 @@ class PortfolioAdmin(SummernoteModelAdmin):
         model = Portfolio
 
 admin.site.register(Portfolio, PortfolioAdmin)
+
