@@ -1,7 +1,9 @@
 from django.shortcuts import render
-# +++ Import Detail & List View +++
+# +++ Import generic View +++
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
+from django.views.generic.dates import YearArchiveView
+
 # +++ Import Tag +++
 from taggit.models import Tag
 # +++ Import Custom models +++
@@ -44,7 +46,7 @@ class PostDetailView(TagMixin, DetailView):
 # === Post List View ===
 class PostListView(TagMixin, ListView):
     model = Post
-    paginate_by = '5'
+    paginate_by = '6'
     queryset = Post.objects.all().order_by('-pub')
 
     def get_context_data(self, **kwargs):
@@ -52,11 +54,18 @@ class PostListView(TagMixin, ListView):
         context['now'] = timezone.now()
         return context
 
+# === Post Year View ===
+class PostYearArchiveView(YearArchiveView):
+    queryset = Post.objects.all()
+    date_field = "pub"
+    make_object_list = True
+    allow_future = True
+
 # === Tag list View ===
 class TagPostView(TagMixin, ListView):
     template_name = 'app/post_tag.html'
     model = Post
-    paginate_by = '50'
+    paginate_by = '6'
     context_object_name = 'posts'
 
     def get_queryset(self):

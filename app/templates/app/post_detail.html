@@ -2,18 +2,19 @@
 {% block title %}{{ block.super }} | {{ object.title }} {% endblock %}
 {% block content %}
     <section id="posts">
+
         <div class="row">
-            <div class="col-nine">
+            <div class="col-twelve">
                 <div class="cardz">
                     <h1> {{ object.title }} </h1>
                     <p>{{ object.pub }}</p>
-              <hr>
-                    <img src="{{ object.pic.url }}">
+                    <hr>
+                    <img src="{{ object.pic.url }}" alt="{{ object.title }}">
                     <p>{{ object.body|safe }}</p>
                 </div>
 
             </div>
-            <div class="col-three">
+            <div class="col-twelve">
 
                 <div class="cardz">
                 <h3>Cloud Tags :</h3>
@@ -22,6 +23,7 @@
                 {% empty %}
                 No Tags :)
                 {% endfor %}
+
                 </div>
                 <a class="button stroke" href="{% url 'posts' %}">Back</a>
 
