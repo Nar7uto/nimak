@@ -13,6 +13,7 @@ from app.views import (
     index ,
     portfolio ,
     resume,
+    contact,
     TagPostView,
 )
 
@@ -31,7 +32,8 @@ urlpatterns = [
     path('resume/', resume , name='resume'),
     # Portfolio
     path('portfolio/', portfolio , name='portfolio'),
-
+    # Contact
+    path('contact/', contact , name ='contact'),
     # Summernote
     re_path(r'^summernote/', include('django_summernote.urls')),
 ]

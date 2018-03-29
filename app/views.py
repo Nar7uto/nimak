@@ -26,6 +26,9 @@ def portfolio(request):
     content = Portfolio.objects.all().order_by('-pub')
     return render(request, 'portfolio.html', {'content':content})
 
+# === Contact ===
+def contact(request):
+    return render(request, 'contact.html')
 
 # === Tag Mixin View ===
 class TagMixin(object):
