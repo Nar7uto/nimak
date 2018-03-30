@@ -4,7 +4,7 @@
 > `python 3.6`<br> 
 `django 2.0.3`<br>
 `nginx 11.09.2` <br>
-`ubuntu 16.04 LTS`
+`ubuntu 16.04 LTS`w
 ## Self Driven application 
 > Rebuild in  -  [2018-3-23] <br>
 Firstborn in - [2010-3-28] 
@@ -111,7 +111,7 @@ six==1.11.0
 │       └───lang
 │
 └───templates --> Main template Dir
-    │   base.html  --> Base template for extent in all
+    │   base.html  --> Base template for extend in all
     │   contact.html
     │   index.html
     │   portfolio.html

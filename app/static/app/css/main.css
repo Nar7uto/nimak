@@ -2251,8 +2251,11 @@ header .logo a {
  */
 #contact {
 	background: #151515;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
+	padding-top:50px;
+
+}
+#contact a{
+	color: white;
 }
 #contact .section-intro h1 {
 	color: white;
