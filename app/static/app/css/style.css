@@ -37,3 +37,9 @@
 	position: relative;
 
 }
+
+#resume-img{
+    height: 90px;
+    width: 90px;
+    padding-bottom: 10px;
+}
