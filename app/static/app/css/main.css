@@ -2250,7 +2250,7 @@ header .logo a {
  * -------------------------------------------------------------------
  */
 #contact {
-	background: #151515;
+	background: white !important;
 	padding-top:50px;
 
 }
