@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58b588b-898f-4fdf-9816-bede4ee5adad" name="Default" comment="First Day">
-      <change beforePath="$PROJECT_DIR$/static/app/css/main.css" afterPath="$PROJECT_DIR$/static/app/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/static/app/css/style.css" afterPath="$PROJECT_DIR$/static/app/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/static/app/images/Avatar.jpg" afterPath="$PROJECT_DIR$/static/app/images/Avatar.jpg" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/resume.html" afterPath="$PROJECT_DIR$/templates/resume.html" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/post_list.html" afterPath="$PROJECT_DIR$/app/templates/app/post_list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="resume.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/resume.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
@@ -72,6 +68,16 @@
               <folding>
                 <element signature="e#1515#1534#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,7 +145,6 @@
         <option value="$PROJECT_DIR$/app/templates/app/post_archive_year.html" />
         <option value="$PROJECT_DIR$/app/templates/app/post_tag.html" />
         <option value="$PROJECT_DIR$/app/templates/app/post_detail.html" />
-        <option value="$PROJECT_DIR$/app/templates/app/post_list.html" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/app/admin.py" />
@@ -158,6 +163,7 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/app/css/main.css" />
         <option value="$PROJECT_DIR$/templates/resume.html" />
+        <option value="$PROJECT_DIR$/app/templates/app/post_list.html" />
       </list>
     </option>
   </component>
@@ -197,6 +203,24 @@
             <path>
               <item name="nimak" type="b2602c69:ProjectViewProjectNode" />
               <item name="nimak" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nimak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nimak" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nimak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nimak" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nimak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nimak" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nimak" type="b2602c69:ProjectViewProjectNode" />
@@ -547,14 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/app/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -730,6 +746,14 @@
           <folding>
             <element signature="e#1515#1534#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/app/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
