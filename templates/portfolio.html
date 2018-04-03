@@ -9,16 +9,11 @@
 
 		<div class="row section-intro">
    		<div class="col-twelve">
-
    			<h5>Portfolio</h5>
    			<h1>Check Out Some of My Works.</h1>
-
-
    		</div>
    	</div> <!-- /section-intro-->
-
    	<div class="row portfolio-content">
-
    		<div class="col-twelve">
         {% for port in content %}
    			<!-- portfolio-wrapper -->
@@ -40,7 +35,6 @@
 	               </div>
                 </div> <!-- /folio-item -->
                 {% endfor %}
-
 	            <!-- modal popups - begin
 	            ============================================================= -->
                 {% for port in content %}
@@ -53,7 +47,7 @@
 					   </div>
 
 			         <div class="link-box">
-			            <a href="https://sharpened.com/web_design_rules">More Details</a>
+			            <a href="{% url 'contact' %}">Contact me</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -61,13 +55,9 @@
                 {% endfor %}
 				   <!-- modal popups - end
 	            ============================================================= -->
-
 	         </div> <!-- /portfolio-wrapper -->
-
    		</div>  <!-- /twelve -->
-
    	</div> <!-- /portfolio-content -->
-
 	</section> <!-- /portfolio -->
 
 
