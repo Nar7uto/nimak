@@ -56,22 +56,49 @@
 
    	</div> <!-- /resume-timeline -->
     {% endfor %}
-    <!-- temp hard coded -->
-        <div class="col-six">
-            <h4>Technical and professional Conservatory</h4>
-            <p>Computer science - 2011</p>
+<br>
+    <hr>
+    {% for project in projects %}
+    <div class="col-six">
+        <h3>{{ project.title }}</h3>
+        <p> {{ project.body|safe|truncatewords:80 }}</p>
+        <img src="{{ project.pic.url }}" alt="{{ project.title }}">
+        <br>
+        <a class="button stroke" href="{{ project.link }}">Link</a>
+    </div>
+    {% endfor %}
+<br>
+        <hr>
+    <br>
+    {% for cert in certs %}
+        <div class="col-twelve">
+        <h5>{{ cert.title }}</h5>
+            <div class="col-eight">
+                <p>{{ cert.body|safe }}</p>
+            </div>
+            <div class="col-four">
+                <img src="{{ cert.pic.url }}" alt="{{ cert.title }}">
+            </div>
+
+
         </div>
-        <div class="col-six" style="color: gray">
-            <h3>Certificate of completion of the course :</h3>
-            <h5><i class="fa fa-code"></i> Irpycon - 48 h </h5>
-            <h5><i class="fa fa-code"></i> Internet - 12 h</h5>
-            <h5><i class="fa fa-code"></i> Ms Powerpoint - 20 h</h5>
-            <h5><i class="fa fa-code"></i> Ms Access - 26 h</h5>
-            <h5><i class="fa fa-code"></i> Ms Exel - 26 h</h5>
-            <h5><i class="fa fa-code"></i> Ms Windows - 8 h</h5>
-            <h5><i class="fa fa-code"></i> Ms Word - 26 h</h5>
-            <h5><i class="fa fa-code"></i> IT concepts - 12 h</h5>
-        </div>
+    {% endfor %}
+{#    <!-- temp hard coded -->#}
+{#        <div class="col-six">#}
+{#            <h4>Technical and professional Conservatory</h4>#}
+{#            <p>Computer science - 2011</p>#}
+{#        </div>#}
+{#        <div class="col-six" style="color: gray">#}
+{#            <h3>Certificate of completion of the course :</h3>#}
+{#            <h5><i class="fa fa-code"></i> Irpycon - 48 h </h5>#}
+{#            <h5><i class="fa fa-code"></i> Internet - 12 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> Ms Powerpoint - 20 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> Ms Access - 26 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> Ms Exel - 26 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> Ms Windows - 8 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> Ms Word - 26 h</h5>#}
+{#            <h5><i class="fa fa-code"></i> IT concepts - 12 h</h5>#}
+{#        </div>#}
     </div>
 	</section> <!-- /features -->
 

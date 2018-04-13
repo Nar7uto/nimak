@@ -53,4 +53,22 @@ class Resume(models.Model):
     def __str__(self):
         return self.title
 
+# -- Project --
+class Project(models.Model):
+    title = models.CharField(max_length=80)
+    body = models.TextField()
+    link = models.URLField(null=True,blank=True)
+    pic = models.ImageField(upload_to='project/',blank=True,null=True)
+
+    def __str__(self):
+        return self.title
+
+# -- Cert --
+class Cert(models.Model):
+    title= models.CharField(max_length=80)
+    body = models.TextField()
+    pic = models.ImageField(upload_to='cert/', null=True , blank=True)
+
+    def __str__(self):
+        return self.title
 

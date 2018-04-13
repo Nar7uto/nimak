@@ -2,7 +2,7 @@ from django.contrib import admin
 #+++ Summernote +++
 from django_summernote.admin import SummernoteModelAdmin
 #+++ import models here. ++++
-from app.models import Post , Portfolio , Resume
+from app.models import Post , Portfolio , Resume , Project , Cert
 
 
 admin.site.site_header = 'Nim4 Karimi - Django Panel :)'
@@ -34,3 +34,6 @@ class PortfolioAdmin(SummernoteModelAdmin):
 
 admin.site.register(Portfolio, PortfolioAdmin)
 
+#=== Model In Resume
+admin.site.register(Project)
+admin.site.register(Cert)

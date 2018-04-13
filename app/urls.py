@@ -45,3 +45,9 @@ if settings.DEBUG==False:
             'document_root': settings.MEDIA_ROOT,
         }),
     ]
+if settings.DEBUG==True:
+    urlpatterns += [
+        re_path(r'^media/(?P<path>.*)$', serve, {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    ]

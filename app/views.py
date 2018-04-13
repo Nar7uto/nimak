@@ -6,7 +6,7 @@ from django.views.generic.dates import YearArchiveView
 # +++ Import Tag +++
 from taggit.models import Tag
 # +++ Import Custom models +++
-from app.models import Post , Portfolio , Resume
+from app.models import Post , Portfolio , Resume , Project , Cert
 # +++ import Utils +++
 from django.utils import timezone
 
@@ -19,7 +19,9 @@ def index(request):
 # === Resume ===
 def resume(request):
     content = Resume.objects.all().order_by('-start')
-    return render(request, 'resume.html', {'content':content})
+    projects = Project.objects.all()
+    certs = Cert.objects.all()
+    return render(request, 'resume.html', {'content':content,'projects':projects,'certs':certs})
 
 # === Portfolio ===
 def portfolio(request):
