@@ -1658,6 +1658,7 @@ header .logo a {
 	height: 4.8rem;
 	width: 4.8rem;
 	line-height: 4.8rem;
+	background: #313131;
 	border-radius: 50%;
 	text-align: center;
 	color: #FFFFFF;
@@ -2250,8 +2251,11 @@ header .logo a {
  */
 #contact {
 	background: white !important;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
+	padding-top:50px;
+
+}
+#contact a{
+	color: white;
 }
 #contact .section-intro h1 {
 	color: white;
@@ -2629,8 +2633,8 @@ footer .copyright span:last-child::after {
 }
 
 #posts {
-  background-color: white;
-  padding-top: 10% !important;
+    background-color: white;
+    padding-top: 80px !important;
 }
 
 #posts h5 {
@@ -2659,5 +2663,10 @@ footer .copyright span:last-child::after {
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.fixi{
+	display: block;
+	position: sticky !important;
 }
 /*# sourceMappingURL=main.css.map - Nim4*/
