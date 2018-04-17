@@ -2,26 +2,80 @@
 {% load static %}
 {% block title %}{{ block.super }} | Posts {% endblock %}
 {% block content %}
-        <div class="row">
-        {% for p in post_list %}
-            <div class="col m12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="{{ p.pic.url }}" alt="{{ p.title }}">
+{#        <div class="row">#}
+{#        {% for p in post_list %}#}
+{#            <div class="col m6">#}
+{#                <div class="card">#}
+{#                    <div class="card-image waves-effect waves-block waves-light">#}
+{#                      <img class="activator" src="{{ p.pic.url }}" alt="{{ p.title }}">#}
+{#                    </div>#}
+{#                    <div class="card-content">#}
+{#                      <span class="card-title activator grey-text text-darken-4">{{ p.title }}<i class="material-icons right">more_vert</i></span>#}
+{#                      <p><a class="btn button-primary blue btn-small" href="#">Read More ..</a></p>#}
+{#                    </div>#}
+{#                    <div class="card-reveal">#}
+{#                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>#}
+{#                      <p>{{ p.body|truncatewords:50 }}</p>#}
+{#                    </div>#}
+{#                  </div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#        </div>#}
+{#  ======================================  #}
+    <div class="row">
+
+        {% for post in post_list %}
+        <div class="col s12 m4 ">
+{#            <div class="row">#}
+
+{#                <div class="col">#}
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <a href="{{ post.slug }}">
+                                <img src="{{ post.pic.url }}" alt="{{ post.title }}" height="250">
+                            </a>
+                        </div>
+                        <span class="card-title">{{ post.title }}</span>
+                        <div class="card-content">
+                            <span class="chip right"> {{ post.pub|date:"M Y D" }}</span>
+                            <a class="btn btn-small blue" href="{{ post.slug }}">Read More</a>
+                        </div>
                     </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">{{ p.title }}<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>{{ p.body|truncatewords:50|safe }}</p>
-                    </div>
-                  </div>
-            </div>
+
+{#                </div>#}
+{#            </div>#}
+        </div>
         {% endfor %}
+
+    </div>
+    <div class="row">
+
+        <div class="col s16 m4 center-align">
+            <h4 class="center-align">Pagination</h4>
+            {% if is_paginated %}
+             <ul class="pagination">
+                {% if page_obj.has_previous %}
+                <li><a href="/posts?page={{ page_obj.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
+                {% endif %}
+                <li class="chip blue white-text">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</li>
+                {% if page_obj.has_next %}
+                <li class="waves-effect"><a href="/posts?page={{ page_obj.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+                {% endif %}
+              </ul>
+            {% endif %}
         </div>
 
+         <div class="col s6 m4">
+            <h4 class="center-align">Tag Cloud</h4>
+            {% for tag in tags %}
+              <div class="chip">
+                 <a class="chip" href="{% url 'tagged' tag.slug %}">{{ tag.name }}</a>
+                  <i class="close material-icons">close</i>
+              </div>
+            {% empty %} No Tags :) {% endfor %}
+
+        </div>
+    </div>
 
 
 
@@ -65,9 +119,7 @@
 {#        <div class="col-four">#}
 {#            <div class="cardz">#}
 {#                <h3>Cloud Tags :</h3>#}
-{#                {% for tag in tags %}#}
-{#                <a class="chips" href="{% url 'tagged' tag.slug %}">{{ tag.name }}</a>#}
-{#                {% empty %} No Tags :) {% endfor %}#}
+
 {#            </div>#}
 {#        <br>#}
 {##}
