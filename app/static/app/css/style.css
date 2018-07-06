@@ -48,3 +48,12 @@
     color: #00adef;
     text-align: center;
 }
+
+
+#colorcontact {
+    color: black !important;
+}
+
+#contact a{
+    color: gray !important;
+}
