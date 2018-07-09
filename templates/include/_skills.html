@@ -1,0 +1,121 @@
+{% load static %}
+<section id="about">
+
+	<div class="row section-intro">
+		<div class="col-twelve">
+
+			<h5>About</h5>
+			<h1>Let me introduce myself.</h1>
+
+			<div class="intro-info">
+
+				<img src="{% static 'app/images/Avatar.jpg' %}" alt="Nima Karimi">
+
+				<p class="lead">As a Software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with
+					my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and
+					efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+                <div class="row button-section">
+		            <div class="col-twelve">
+			            <a href="{% static 'app/Nima-Karimi-CV.pdf'%}" title="Resume" class="button stroke">Download My CV</a>
+
+		            </div>
+	            </div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /section-intro -->
+<br>
+    <br>
+	<div class="row about-content">
+
+		<div class="col-six tab-full">
+
+			<ul class="info-list">
+				<li>
+					<strong>Fullname:</strong>
+					<span>Nima Karimi</span>
+				</li>
+				<li>
+					<strong>Birth Date :</strong>
+					<span>93 March 28</span>
+				</li>
+				<li>
+					<strong>Nationality :</strong>
+					<span>Iran</span>
+				</li>
+				<li>
+					<strong>Relocation :</strong>
+					<span>Yes</span>
+				</li>
+                <li>
+                    <strong>Military Service :</strong>
+                    <span>Complate 1 year Sergeant III</span>
+                </li>
+				<li>
+					<strong>Ongoing :</strong>
+					<span>Co-founder & CTO at
+						<a href="https://herotek.ir">herotek ®</a>
+					</span>
+				</li>
+				<li>
+					<strong>Email :</strong>
+					<span>nima.karimi@live.com</span>
+				</li>
+				<li>
+					<strong>Phone :</strong>
+					<span>+989141436088</span>
+				</li>
+
+			</ul>
+            <br>
+			<!-- /info-list -->
+
+		</div>
+
+		<div class="col-six tab-full">
+{#            <h3>Profile</h3>#}
+{#			<p>Daily learning is my main concern. Contemplation contributes to the growth and flattery of my innate talents. Getting to a higher level in my job is my goal, and I'm always trying it for a moment. Obtaining a job position which allow me to take pleasure from working is my main professional life goal.</p>#}
+
+
+
+            <h3>Technologys</h3>
+			<ul class="skill-bars">
+				<li>
+					<div class="progress percent100"></div>
+					<strong>Graphic design</strong>
+					<small>Adobe Photoshop ,illustrator ,XD , Dreamweaver ,MS Power point ,Gimp , Artcam , Aspire , Corel draw ,Wireframe, Camtasia , Video edit </small>
+				</li>
+                <br>
+                <br>
+				<li>
+					<div class="progress percent90"></div>
+					<strong>Programming</strong>
+					<small>Python , Ruby, GUI , OOP , TDD , ORM , Tkinter , Requests , Kivy , VSCode , PyCharm , Emacs </small>
+				</li>
+                <br>
+                <br>
+				<li>
+					<div class="progress percent70">
+					</div>
+					<strong>Web Development</strong>
+                    <small>Django , Flask , Django Restfull , HTML5 , Pug , XML , RESTful , API , Sass , CSS3 , JQuery, Nginx , Gunicorn ,uWSGI , Git , Bash , Ubuntu ,Docker ,Anisble ,Websocket , PostgreSQL ,SQLite3 , MaterializeCSS , Bootstrap , Wordpress </small>
+				</li>
+                <br>
+                <br>
+			</ul>
+			<!-- /skill-bars -->
+
+		</div>
+
+	</div>
+    <div class="row button-section">
+                <!--<div class="col-twelve">-->
+                    <!--<a href="{% url 'resume' %}" title="Resume" class="button stroke">Work Experience</a>-->
+                <!--</div>-->
+                <div class="col-twelve">
+                    <a href="{% url 'portfolio' %}" title="Portfolio" class="button stroke">Portfolio</a>
+                </div>
+            </div>
+
+</section>
