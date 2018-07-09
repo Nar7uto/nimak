@@ -1,88 +1,62 @@
-{%  extends 'base.html' %}
-{% block title %}{{ block.super }} | Say Hello :) {% endblock %}
-{% block content %}
+{% extends 'base.html' %} {% block title %}{{ block.super }} | Say Hello :) {% endblock %} {% block content %}
 
-    <section id="contact">
-        <div class="row contact-info">
+<section id="contact">
+    <div class="row contact-info">
 
-            <div class="col-twelve tab-full" id='colorcontact'>
+        <div class="col-twelve tab-full" id='colorcontact'>
 
-                <h6><i class="fa fa-facebook-square"></i>  Facebook  <a href="https://facebook.com/K4rimi">fb.com/k4rimi</a></h6>
-                <h6><i class="fa fa-code"></i>  Dev Heroes Club  <a href="https://devheroes.club/u/nim4/">Nim4</a></h6>
-                <h6><i class="fa fa-instagram"></i>  Instagram  <a href="https://www.instagram.com/nim4/">@Nim4</a></h6>
-                <h6><i class="fa fa-twitter-square"></i>  Twitter  <a href="https://twitter.com/nim4karimi/">@Nim4karimi</a></h6>
-                <h6><i class="fa fa-linkedin-square"></i>  Linkedin  <a href="https://www.linkedin.com/in/nim4karimi/">in/Nim4karimi</a></h6>
-                <h6><i class="fa fa-github-square"></i>  Github -> <a href="https://github.com/nim4karimi/">Nim4karimi</a></h6>
-                <h6><i class="fa fa-skype"></i>  Skype ID -> <a href="#">Nima</a></h6>
-                <h6><i class="fa fa-phone-square"></i>  Whatsapp -> <a href="#">+989141436088</a></h6>
-                <h6><i class="fa fa-phone-square"></i>  Telegram -> <a href="#">+989141436088</a></h6>
-                <h6><i class="fa fa-mail-reply"></i>  Email :</h6>
-                <a href="#">Nima.karimi@live.com</a><br>
-                <a href="#">Nim4.karimi@gmail.com</a>
-
-            </div>
+            <h6>
+                <i class="fa fa-facebook-square"></i> Facebook
+                <a href="https://facebook.com/K4rimi">fb.com/k4rimi</a>
+            </h6>
+            <h6>
+                <i class="fa fa-code"></i> Dev Heroes Club
+                <a href="https://devheroes.club/u/nim4/">Nim4</a>
+            </h6>
+            <h6>
+                <i class="fa fa-instagram"></i> Instagram
+                <a href="https://www.instagram.com/nim4/">@Nim4</a>
+            </h6>
+            <h6>
+                <i class="fa fa-twitter-square"></i> Twitter
+                <a href="https://twitter.com/nim4karimi/">@Nim4karimi</a>
+            </h6>
+            <h6>
+                <i class="fa fa-linkedin-square"></i> Linkedin
+                <a href="https://www.linkedin.com/in/nim4karimi/">in/Nim4karimi</a>
+            </h6>
+            <h6>
+                <i class="fa fa-github-square"></i> Github ->
+                <a href="https://github.com/nim4karimi/">Nim4karimi</a>
+            </h6>
+            <h6>
+                <i class="fa fa-skype"></i> Skype ID ->
+                <a href="#">Nima</a>
+            </h6>
+            <h6>
+                <i class="fa fa-phone-square"></i> Whatsapp ->
+                <a href="#">+989141436088</a>
+            </h6>
+            <h6>
+                <i class="fa fa-phone-square"></i> Telegram ->
+                <a href="#">+989141436088</a>
+            </h6>
+            <h6>
+                <i class="fa fa-mail-reply"></i> Email :</h6>
+            <a href="#">Nima.karimi@live.com</a>
             <br>
-            <br>
+            <a href="#">Nim4.karimi@gmail.com</a>
 
-{#    <div class="col-six tab-full">#}
-{##}
-{#        <div class="col-twelve">#}
-{##}
-{#   			<h5>Contact</h5>#}
-{#   			<h1>I'd Love To Hear From You.</h1>#}
-{#            #}
-{#   		</div>#}
-{#   	</div> <!-- /section-intro -->#}
+        </div>
+        <br>
+        <br>
+        <br>
 
-{#   	<div class="row contact-form">#}
-{##}
-{#   		<div class="col-six tab-full">#}
-{##}
-{#            <!-- form -->#}
-{#            <form name="contactForm" id="contactForm" method="post" action="mailto:hi@nim4.ir">#}
-{#      			<fieldset>#}
-{##}
-{#                  <div class="form-field">#}
-{# 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">#}
-{#                  </div>#}
-{#                  <div class="form-field">#}
-{#	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">#}
-{#	               </div>#}
-{#                  <div class="form-field">#}
-{#	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">#}
-{#	               </div>#}
-{#                  <div class="form-field">#}
-{#	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>#}
-{#	               </div>#}
-{#                 <div class="form-field">#}
-{#                     <button class="submitform">Submit</button>#}
-{#                     <div id="submit-loader">#}
-{#                        <div class="text-loader">Sending...</div>#}
-{#       				      <div class="s-loader">#}
-{#								  	<div class="bounce1"></div>#}
-{#								  	<div class="bounce2"></div>#}
-{#								  	<div class="bounce3"></div>#}
-{#								</div>#}
-{#							</div>#}
-{#                  </div>#}
-{##}
-{#      			</fieldset>#}
-{#      		</form> <!-- Form End -->#}
-{##}
-{#            <!-- contact-warning -->#}
-{#            <div id="message-warning">#}
-{#            </div>#}
-{#            <!-- contact-success -->#}
-{#      		<div id="message-success">#}
-{#               <i class="fa fa-check"></i>Your message was sent, thank you!<br>#}
-{#      		</div>#}
-{##}
-{#            </div>#}
 
-        </div> <!-- /contact-info -->
 
-	</section> <!-- /contact -->
+</section>
+<!-- /contact -->
 <br>
-<br>
+<br> 
 
 {% endblock %}
